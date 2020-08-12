@@ -91,7 +91,7 @@ inTrain <- createDataPartition(trainCleaned$classe, p=0.70, list=F)
 trainData <- trainCleaned[inTrain, ]
 testData <- trainCleaned[-inTrain, ]
 ```
-
+ 
 # Modeling the data
 We use the Random Forest algorithm with 5-fold cross validation and figure out the performance of the model:
 ```{r, cache = T}
